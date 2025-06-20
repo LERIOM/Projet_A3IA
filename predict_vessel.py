@@ -1,6 +1,7 @@
 import argparse
 import joblib
 import numpy as np
+import os
 
 # Charger le modèle entraîné
 model = joblib.load("C:\\Users\\alban\\Documents\\projet_ia\\Projet_A3IA\\Besoin_Client_2\\model_vessel_type_one_line_per_mmsi.pkl")
@@ -23,4 +24,4 @@ input_data = np.array([[args.sog, args.cog, args.heading, args.length, args.widt
 predicted_class = model.predict(input_data)[0]
 
 # Afficher le résultat
-print(f"👉 Type de navire prédit : {predicted_class}")
+print(f"Type de navire prédit : {predicted_class}")
