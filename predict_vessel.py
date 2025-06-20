@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Charger le modèle entraîné
-model = joblib.load("model_vessel_type_one_line_per_mmsi.pkl")
+model = joblib.load("C:\\Users\\alban\\Documents\\projet_ia\\Projet_A3IA\\Besoin_Client_2\\model_vessel_type_one_line_per_mmsi.pkl")
 
 # Définir les arguments de la ligne de commande
 parser = argparse.ArgumentParser(description="Prédire le type de navire")
